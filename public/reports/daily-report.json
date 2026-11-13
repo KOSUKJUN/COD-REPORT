@@ -1,0 +1,144 @@
+{
+  "type": "daily",
+  "date": "2026-11-01",
+  "blocks": [
+    {
+      "id": "daily-title",
+      "type": "title",
+      "heading": "",
+      "content": "위협 보안관제 현황(가천대길병원)",
+      "fontSize": 18,
+      "align": "center"
+    },
+    {
+      "id": "daily-period",
+      "type": "period",
+      "heading": "",
+      "content": "",
+      "fontSize": 14,
+      "align": "center",
+      "start": "2026-10-31T08:00",
+      "end": "2026-11-01T08:00"
+    },
+    {
+      "id": "daily-security-heading",
+      "type": "subheading",
+      "heading": "",
+      "content": "1. 보안관제 업무",
+      "fontSize": 12,
+      "align": "left"
+    },
+    {
+      "id": "daily-detection-table",
+      "type": "table",
+      "heading": "1) 탐지 종합 현황",
+      "content": "",
+      "fontSize": 8,
+      "align": "left",
+      "unit": "(단위: 건)",
+      "columnStyles": [
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" }
+      ],
+      "groupHeaders": [
+        { "label": "구분", "colspan": 1, "rowspan": 2 },
+        { "label": "총 관제", "colspan": 1, "rowspan": 2 },
+        { "label": "탐지", "colspan": 1, "rowspan": 2 },
+        { "label": "분석", "colspan": 3, "rowspan": 1 },
+        { "label": "반복 탐지", "colspan": 1, "rowspan": 2 }
+      ],
+      "columns": [
+        "총 관제",
+        "탐지",
+        "무시 종결",
+        "자체 종결",
+        "조치 요구",
+        "반복 탐지"
+      ],
+      "subHeaders": ["무시 종결", "자체 종결", "조치 요구"],
+      "rows": [
+        { "label": "전일", "cells": ["258", "97", "9", "4", "0", "84"] },
+        { "label": "금일", "cells": ["40", "26", "7", "5", "0", "14"] },
+        { "label": "증감", "cells": ["▼218", "▼71", "▼2", "▲1", "-", "▼70"] }
+      ],
+      "definitions": [
+        "총관제: 기관별 위협탐지 총건수",
+        "탐지: 센터 경보 분석 탐지된 건수",
+        "무시종결: 상세 분석 결과, 정상 통신 및 오탐 등 공격 유효성이 없어 종결하는 건",
+        "자체종결: 상세 분석 결과, 공격 위협은 탐지되었으나 공격 유효성이 없어 종결하는 건",
+        "조치요구: 장비에서 유효성 확인이 필요하여 기관에 조치 권고한 건수",
+        "반복탐지: 탐지 건 중 동일 정보가 지속 발생한 건수"
+      ]
+    },
+    {
+      "id": "daily-special-notes",
+      "type": "special",
+      "heading": "〈관제 특이사항〉",
+      "content": "○ 특이사항 없음",
+      "fontSize": 14,
+      "align": "left"
+    },
+    {
+      "id": "daily-threat-response",
+      "type": "table",
+      "heading": "2) 위협 의심유형 대응현황",
+      "content": "",
+      "fontSize": 8,
+      "align": "left",
+      "columnStyles": [
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" }
+      ],
+      "columns": [
+        "발생일시",
+        "기관명",
+        "위협유형",
+        "조치요구일시",
+        "조치완료일시",
+        "비고"
+      ],
+      "rows": [
+        { "label": "회신 대기", "cells": ["-", "-", "-", "-", "-", "-"] },
+        { "label": "회신 종결", "cells": ["-", "-", "-", "-", "-", "-"] }
+      ],
+      "summary": "(1) 회신 대기: 0건\n(2) 회신 종결: 0건"
+    },
+    {
+      "id": "daily-web-tampering",
+      "type": "table",
+      "heading": "3) 홈페이지 위변조 대응현황",
+      "content": "",
+      "fontSize": 8,
+      "align": "left",
+      "columnStyles": [
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" },
+        { "backgroundColor": "" }
+      ],
+      "columns": [
+        "발생일시",
+        "기관명",
+        "위협유형",
+        "조치요구일시",
+        "조치완료일시",
+        "비고"
+      ],
+      "rows": [
+        { "label": "확인 요청", "cells": ["-", "-", "-", "-", "-", "-"] },
+        { "label": "종결", "cells": ["-", "-", "-", "-", "-", "-"] }
+      ],
+      "summary": "(1) 확인 요청: 0건\n(2) 종결: 0건"
+    }
+  ]
+}

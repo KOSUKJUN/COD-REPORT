@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216" height="42" viewBox="0 0 216 42" role="img" aria-labelledby="title">
+  <title id="title">cod-report</title>
+  <rect x="1" y="1" width="40" height="40" rx="11" fill="#315be8"/>
+  <path d="M12 11.5h12l6 6v13H12z" fill="#fff"/>
+  <path d="M24 11.5v6h6M16.5 22h9M16.5 26h9" fill="none" stroke="#315be8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+  <text x="52" y="28" fill="#25324a" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="-1">cod-report</text>
+</svg>

@@ -1,0 +1,25 @@
+<script setup>
+defineProps({ type: { type: String, required: true } });
+</script>
+
+<template>
+  <svg class="chart-type-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <template v-if="type === 'column'"><path d="M3 21h18" /><rect x="5" y="11" width="3" height="10" fill="#4472C4" stroke="none" /><rect x="10.5" y="6" width="3" height="15" fill="#ED7D31" stroke="none" /><rect x="16" y="9" width="3" height="12" fill="#A5A5A5" stroke="none" /></template>
+    <template v-else-if="type === 'line'"><path d="M3 21h18" /><path d="m4 16 5-6 4 3 7-8" stroke="#4472C4" stroke-width="2" /></template>
+    <template v-else-if="type === 'pie'"><circle cx="12" cy="12" r="8.5" fill="#A5A5A5" stroke="none" /><path d="M12 12V3.5A8.5 8.5 0 0 1 20.5 12z" fill="#4472C4" stroke="none" /><path d="M12 12h8.5a8.5 8.5 0 0 1-12.5 7.5z" fill="#ED7D31" stroke="none" /></template>
+    <template v-else-if="type === 'bar'"><path d="M3 3v18" /><rect x="3" y="5" width="12" height="3" fill="#4472C4" stroke="none" /><rect x="3" y="10.5" width="17" height="3" fill="#ED7D31" stroke="none" /><rect x="3" y="16" width="9" height="3" fill="#A5A5A5" stroke="none" /></template>
+    <template v-else-if="type === 'area'"><path d="M3 21h18" /><path d="M3 20V13l5-5 5 4 8-6v14z" fill="#4472C4" fill-opacity=".75" stroke="none" /></template>
+    <template v-else-if="type === 'scatter'"><path d="M3 3v18h18" /><circle cx="8" cy="15" r="1.6" fill="#4472C4" stroke="none" /><circle cx="12" cy="10" r="1.6" fill="#4472C4" stroke="none" /><circle cx="16" cy="13" r="1.6" fill="#ED7D31" stroke="none" /><circle cx="18" cy="6" r="1.6" fill="#ED7D31" stroke="none" /></template>
+    <template v-else-if="type === 'stock'"><path d="M3 21h18M7 5v14M12 3v12M17 8v12" /><rect x="5.5" y="8" width="3" height="7" fill="#e5484d" stroke="none" /><rect x="10.5" y="5" width="3" height="6" fill="#2f6fd6" stroke="none" /><rect x="15.5" y="11" width="3" height="6" fill="#e5484d" stroke="none" /></template>
+    <template v-else-if="type === 'heatmap'"><rect x="3" y="3" width="6" height="6" fill="#4472C4" stroke="none" /><rect x="9" y="3" width="6" height="6" fill="#9DC3E6" stroke="none" /><rect x="15" y="3" width="6" height="6" fill="#2E75B6" stroke="none" /><rect x="3" y="9" width="6" height="6" fill="#BDD7EE" stroke="none" /><rect x="9" y="9" width="6" height="6" fill="#1F4E79" stroke="none" /><rect x="15" y="9" width="6" height="6" fill="#DEEBF7" stroke="none" /><rect x="3" y="15" width="6" height="6" fill="#5B9BD5" stroke="none" /><rect x="9" y="15" width="6" height="6" fill="#DEEBF7" stroke="none" /><rect x="15" y="15" width="6" height="6" fill="#4472C4" stroke="none" /></template>
+    <template v-else-if="type === 'radar'"><path d="m12 3 8.5 6.2-3.3 10H6.8L3.5 9.2z" /><path d="m12 7 5 4-2 5.5H9.5L7.5 11z" fill="#4472C4" fill-opacity=".5" stroke="#4472C4" /></template>
+    <template v-else-if="type === 'treemap'"><rect x="3" y="3" width="10" height="18" fill="#4472C4" stroke="#fff" /><rect x="13" y="3" width="8" height="10" fill="#ED7D31" stroke="#fff" /><rect x="13" y="13" width="8" height="8" fill="#A5A5A5" stroke="#fff" /></template>
+    <template v-else-if="type === 'sunburst'"><circle cx="12" cy="12" r="9" fill="#9DC3E6" stroke="none" /><path d="M12 3a9 9 0 0 1 9 9h-4a5 5 0 0 0-5-5z" fill="#ED7D31" stroke="none" /><circle cx="12" cy="12" r="5" fill="#4472C4" stroke="#fff" /><circle cx="12" cy="12" r="2" fill="#fff" stroke="none" /></template>
+    <template v-else-if="type === 'histogram'"><path d="M3 21h18" /><rect x="3" y="14" width="4" height="7" fill="#4472C4" stroke="none" /><rect x="7" y="7" width="4" height="14" fill="#4472C4" stroke="none" /><rect x="11" y="4" width="4" height="17" fill="#4472C4" stroke="none" /><rect x="15" y="10" width="4" height="11" fill="#4472C4" stroke="none" /></template>
+    <template v-else-if="type === 'boxplot'"><path d="M7 3v4M7 15v5M17 6v3M17 16v4M5 3h4M5 20h4M15 6h4M15 20h4" /><rect x="4.5" y="7" width="5" height="8" fill="#9DC3E6" stroke="#4472C4" /><rect x="14.5" y="9" width="5" height="7" fill="#F4B183" stroke="#ED7D31" /></template>
+    <template v-else-if="type === 'waterfall'"><path d="M3 21h18" /><rect x="3" y="10" width="3.5" height="11" fill="#4472C4" stroke="none" /><rect x="7.5" y="6" width="3.5" height="4" fill="#4472C4" stroke="none" /><rect x="12" y="6" width="3.5" height="6" fill="#ED7D31" stroke="none" /><rect x="16.5" y="12" width="3.5" height="9" fill="#A5A5A5" stroke="none" /></template>
+    <template v-else-if="type === 'funnel'"><path d="M3 4h18l-3 5H6zM6.5 10h11l-2.5 5H9zM9.5 16h5l-1.5 4h-2z" fill="#4472C4" stroke="none" /></template>
+    <template v-else-if="type === 'combo'"><path d="M3 21h18" /><rect x="5" y="12" width="3" height="9" fill="#4472C4" stroke="none" /><rect x="10.5" y="9" width="3" height="12" fill="#4472C4" stroke="none" /><rect x="16" y="14" width="3" height="7" fill="#4472C4" stroke="none" /><path d="m4 9 6-4 5 3 6-4" stroke="#ED7D31" stroke-width="2" /></template>
+    <template v-else><rect x="4" y="4" width="16" height="16" rx="2" /></template>
+  </svg>
+</template>
